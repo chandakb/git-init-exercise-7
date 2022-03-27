@@ -1,0 +1,36 @@
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-7 (master)
+$ git add file3.txt
+warning: LF will be replaced by CRLF in file3.txt.
+The file will have its original line endings in your working directory
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-7 (master)
+$ git commit -m"prints empty list"
+[master db7ad5e] prints empty list
+ 1 file changed, 2 insertions(+)
+ create mode 100644 file3.txt
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-7 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-7 (master)
+$ git log --oneline
+db7ad5e (HEAD -> master) prints empty list
+99826bc prints list l2
+45e23ed prints listl1
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-7 (master)
+$ git reset --hard 99826bc
+HEAD is now at 99826bc prints list l2
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-7 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-7 (master)
+$ git log --oneline
+99826bc (HEAD -> master) prints list l2
+45e23ed prints listl1
+
